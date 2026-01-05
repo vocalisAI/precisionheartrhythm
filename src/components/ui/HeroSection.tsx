@@ -13,6 +13,7 @@ interface HeroSectionProps {
   primaryAction?: HeroAction;
   secondaryAction?: HeroAction;
   backgroundImage?: string;
+  align?: 'center' | 'left';
 }
 
 export default function HeroSection({
@@ -20,6 +21,7 @@ export default function HeroSection({
   subtitle,
   primaryAction,
   secondaryAction,
+  align = 'center',
 }: HeroSectionProps) {
   return (
     <section className={styles.hero}>
