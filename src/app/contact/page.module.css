@@ -1,0 +1,160 @@
+.container {
+  width: 100%;
+  padding-bottom: var(--spacing-2xl);
+}
+
+.header {
+  background-color: var(--color-background-off);
+  padding: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.cardHeading {
+  font-size: 1.5rem;
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.cardDivider {
+  height: 1px;
+  background: var(--color-border);
+  opacity: 0.5;
+  margin: var(--spacing-md) 0;
+}
+
+.subHeading {
+  font-size: 1.125rem;
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+/* Address */
+.address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.address p {
+  margin-bottom: 0.25rem;
+}
+
+/* Directions Button */
+.directionsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: var(--spacing-sm);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--color-primary-blue);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background-color var(--transition-base);
+}
+
+.directionsBtn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Schedule Section */
+.scheduleText {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+}
+
+.phoneButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary-blue);
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0.875rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  box-shadow: 0 2px 8px rgba(7, 60, 105, 0.2);
+}
+
+.phoneButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(7, 60, 105, 0.3);
+}
+
+/* Contact Details */
+.detailRow {
+  margin-bottom: var(--spacing-xs);
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.detailRow a {
+  color: var(--color-accent-teal);
+  text-decoration: none;
+}
+
+.detailRow a:hover {
+  text-decoration: underline;
+}
+
+/* Hours */
+.hoursList {
+  list-style: none;
+}
+
+.hoursList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  max-width: 300px;
+}
+
+.hoursList li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hoursList span {
+  font-weight: 600;
+}

@@ -1,0 +1,175 @@
+.container {
+  width: 100%;
+}
+
+.pageTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-primary-blue);
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.pageTitleUnderline {
+  width: 80px;
+  height: 4px;
+  background: var(--color-accent-teal);
+  margin: 0 auto var(--spacing-xl);
+  border-radius: 2px;
+}
+
+.profileSection {
+  padding: var(--spacing-xl) 0;
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+  margin-bottom: var(--spacing-2xl);
+}
+
+@media (min-width: 900px) {
+  .profileGrid {
+    grid-template-columns: 1fr 1px 1.5fr;
+  }
+}
+
+.verticalDivider {
+  display: none;
+  width: 1px;
+  background: var(--color-border);
+  opacity: 0.5;
+  align-self: stretch;
+}
+
+@media (min-width: 900px) {
+  .verticalDivider {
+    display: block;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.profileImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.statsCard {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statValue {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary-blue);
+  line-height: 1;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.statSub {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--color-text-light);
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-border);
+}
+
+.heading {
+  font-size: 2rem;
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-lg);
+  white-space: nowrap;
+}
+
+.bioBlock {
+  margin-bottom: var(--spacing-lg);
+}
+
+.bioBlock h3 {
+  font-size: 1.25rem;
+  color: var(--color-accent-green);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: var(--color-primary-blue);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-accent-green);
+  display: inline-block;
+}
+
+.qualificationsList {
+  list-style: none; /* Removed discs for cleaner look */
+  margin-bottom: var(--spacing-lg);
+}
+
+.qualificationsList li {
+  margin-bottom: 0.75rem;
+  color: var(--color-text-main);
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-border);
+}
+
+.qualificationsList strong {
+  color: var(--color-primary-dark);
+}
+
+.reviewsSection {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.reviewsHeading {
+  font-size: 2rem;
+  color: var(--color-primary-blue);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}

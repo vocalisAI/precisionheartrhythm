@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  background-color: var(--color-background-off);
+  padding: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+}
+
+@media (min-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary-dark);
+}
+
+.section p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-main);
+  font-size: 1.05rem;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+}
+
+.ctaBox {
+  background-color: var(--color-primary-blue);
+  color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+.ctaBox h3 {
+  color: white;
+  margin-bottom: var(--spacing-sm);
+}
+
+.ctaBox p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-md);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.sidebarCard {
+  background: var(--color-background-off);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.sidebarCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-accent-green);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.sidebarCard ul {
+  list-style: none;
+}
+
+.sidebarCard li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+.linkList li a {
+  color: var(--color-primary-blue);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.linkList li a:hover {
+  color: var(--color-accent-orange);
+}

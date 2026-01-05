@@ -1,0 +1,172 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-light);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: box-shadow var(--transition-base);
+}
+
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.navContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+.logoImage {
+  border-radius: 4px;
+}
+
+.logoText {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-primary-blue);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.navLinks {
+  display: none;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: color var(--transition-fast);
+  white-space: nowrap;
+  position: relative;
+}
+
+.navLinks a:not(.ctaButton):not(.portalButton)::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent-teal);
+  transition: width var(--transition-base);
+}
+
+.navLinks a:not(.ctaButton):not(.portalButton):hover::after {
+  width: 100%;
+}
+
+.navLinks a:hover {
+  color: var(--color-primary-blue);
+}
+
+.ctaButton {
+  color: var(--color-accent-teal) !important;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: color var(--transition-base);
+}
+
+.ctaButton:hover {
+  color: #0a9396 !important;
+}
+
+/* Patient Portal Button Style */
+.portalButton {
+  color: #2E8B57 !important;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.portalButton:hover {
+  color: #256F47 !important;
+}
+
+.mobileMenuBtn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger, .hamburgerOpen {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text-main);
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.hamburger::before, .hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text-main);
+  transition: transform 0.2s;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
+
+.hamburgerOpen { background-color: transparent; }
+.hamburgerOpen::before { transform: rotate(45deg); top: 0; }
+.hamburgerOpen::after { transform: rotate(-45deg); top: 0; }
+
+.mobileMenu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg);
+  gap: var(--spacing-md);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: var(--color-text-main);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-bg-light);
+}
+
+.mobilePortalLink {
+  color: var(--color-primary-blue) !important;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .mobileMenuBtn { display: none; }
+  .navLinks { display: flex; }
+}

@@ -1,0 +1,106 @@
+.container {
+  width: 100%;
+  padding-bottom: var(--spacing-2xl);
+}
+
+.header {
+  background-color: var(--color-background-off);
+  padding: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+}
+
+.deviceSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .deviceSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.deviceContent h2 {
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.deviceContent p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-main);
+}
+
+.deviceContent ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.deviceContent li {
+  margin-bottom: 0.5rem;
+}
+
+.placeholderBg {
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-background-off);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--color-border);
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.monitoringSection {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.monitoringSection h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.monitoringSection > p {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  color: var(--color-text-main);
+}
+
+.monitoringGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.monitoringCard {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.monitoringCard h3 {
+  color: var(--color-accent-green);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.ctaWrapper {
+  text-align: center;
+}

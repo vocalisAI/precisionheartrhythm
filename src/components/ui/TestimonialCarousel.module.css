@@ -1,0 +1,113 @@
+.carouselContainer {
+  background-color: var(--color-primary-blue);
+  color: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  margin-top: var(--spacing-2xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  color: white;
+  margin-bottom: var(--spacing-lg);
+  font-family: var(--font-inter);
+}
+
+.carouselViewport {
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.active {
+  opacity: 1;
+  position: relative; /* Takes up space */
+  pointer-events: auto;
+}
+
+.hidden {
+  display: none; /* Hide non-active completely to prevent height issues if absolute */
+}
+
+/* Better approach for absolute positioning transition */
+.card.active {
+  display: flex;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quoteMark {
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--color-accent-green);
+  opacity: 0.5;
+  margin-bottom: var(--spacing-sm);
+  font-family: serif;
+}
+
+.text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  max-width: 800px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stars {
+  color: var(--color-accent-orange);
+  letter-spacing: 2px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: var(--spacing-lg);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.activeDot {
+  background-color: var(--color-accent-green);
+  transform: scale(1.2);
+}

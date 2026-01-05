@@ -1,0 +1,321 @@
+.pageContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  width: 100%;
+}
+
+.section {
+  padding: var(--spacing-2xl) 0;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.sectionDivider {
+  height: 1px;
+  background: var(--color-border);
+  opacity: 0.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Trust Pillars */
+.trustSection {
+  padding: var(--spacing-2xl) 0;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .trustGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+  }
+}
+
+.trustItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.trustIcon {
+  color: var(--color-accent-teal);
+  margin-bottom: var(--spacing-xs);
+}
+
+.trustTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  margin: 0;
+}
+
+.trustText {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* Doctor Preview Section */
+.doctorSection {
+  padding: var(--spacing-2xl) 0;
+}
+
+.doctorGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .doctorGrid {
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+.doctorImageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.doctorImage {
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.doctorContent {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .doctorContent {
+    text-align: left;
+  }
+}
+
+.doctorHeading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.doctorCredentials {
+  font-size: 1rem;
+  color: var(--color-accent-teal);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+}
+
+.doctorBio {
+  font-size: 1.0625rem;
+  color: var(--color-text-main);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+.doctorLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent-teal);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.doctorLink:hover {
+  color: var(--color-primary-blue);
+}
+
+/* Service Cards Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+  }
+}
+
+.card {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 220px;
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-accent-teal);
+}
+
+.cardIcon {
+  color: var(--color-accent-teal);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cardTitle {
+  font-size: 1.375rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary-blue);
+  font-weight: 600;
+}
+
+.cardText {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.cardLink {
+  color: var(--color-accent-teal);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.textLink {
+  color: var(--color-accent-teal);
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.textLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent-teal);
+  opacity: 0.4;
+}
+
+.textLink:hover::after {
+  opacity: 1;
+}
+
+/* Testimonial Section */
+.testimonialSection {
+  padding: var(--spacing-2xl) 0;
+}
+
+.testimonialCard {
+  background: var(--color-background-off);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonialStars {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  color: #f59e0b;
+  margin-bottom: var(--spacing-md);
+}
+
+.testimonialQuote {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--color-text-main);
+  line-height: 1.7;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.testimonialAuthor {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* CTA Band */
+.ctaBand {
+  background-color: var(--color-primary-blue);
+  color: white;
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+  margin-top: var(--spacing-md);
+}
+
+.ctaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 600px) {
+  .ctaContent {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+  }
+}
+
+.ctaTitle {
+  font-size: 1.375rem;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 600;
+}
+
+.btnWhite {
+  display: inline-block;
+  background-color: white;
+  color: var(--color-primary-blue);
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btnWhite:hover {
+  background-color: var(--color-background-off);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

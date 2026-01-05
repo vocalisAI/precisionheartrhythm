@@ -1,0 +1,70 @@
+/* Heartbeat ECG Animation */
+
+.ecgContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 1; /* Behind content but above hero overlay if needed, or blend it */
+  pointer-events: none;
+  opacity: 0.15; /* Subtle */
+  overflow: hidden;
+}
+
+.ecgLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%);
+}
+
+.ecgPulse {
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(45, 212, 191, 0.8) 50%, transparent 100%);
+  transform: translateY(-50%);
+  animation: ecg-flow 3s infinite linear;
+}
+
+/* Create the ECG spike shape using a pseudo element or SVG */
+/* Using SVG approach for better control */
+.ecgSvg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ecgPath {
+  stroke: rgba(45, 212, 191, 0.4); /* Teal color */
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: ecg-draw 4s infinite linear;
+}
+
+@keyframes ecg-draw {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}

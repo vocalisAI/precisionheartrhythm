@@ -1,0 +1,38 @@
+.carouselWrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: var(--spacing-lg) 0;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 24px;
+  will-change: transform;
+}
+
+.reviewCard {
+  flex-shrink: 0;
+  width: 320px;
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  text-align: center;
+}
+
+.stars {
+  color: #f59e0b;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.reviewText {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+  font-weight: 500;
+}
