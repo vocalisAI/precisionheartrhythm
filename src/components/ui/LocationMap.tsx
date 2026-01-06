@@ -13,7 +13,9 @@ export default function LocationMap() {
       <Map 
         center={[officeLocation.lng, officeLocation.lat]}
         zoom={15}
-        mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+        styles={{
+          light: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+        }}
       >
         <MapMarker longitude={officeLocation.lng} latitude={officeLocation.lat}>
           <MarkerContent>
