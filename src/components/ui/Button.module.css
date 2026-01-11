@@ -13,27 +13,30 @@
 }
 
 .primary {
-  background-color: var(--color-accent-teal);
+  background-color: var(--color-india-navy);
   color: white;
-  box-shadow: 0 2px 8px rgba(8, 145, 178, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 128, 0.25);
+  border: 1px solid transparent;
 }
 
 .primary:hover {
-  background-color: #0a9396;
+  background-color: var(--color-india-saffron);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(8, 145, 178, 0.35);
+  box-shadow: 0 6px 12px rgba(255, 153, 51, 0.4);
 }
 
 .secondary {
-  background-color: var(--color-accent-teal);
-  color: white;
-  box-shadow: 0 2px 4px rgba(8, 145, 178, 0.15);
+  background-color: white;
+  color: var(--color-india-navy);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .secondary:hover {
-  background-color: #0284c7;
+  border-color: var(--color-india-navy);
+  color: var(--color-india-saffron);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(8, 145, 178, 0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .outline {

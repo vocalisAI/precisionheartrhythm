@@ -30,19 +30,35 @@ export default function AblationPage() {
 
             <section className={styles.section}>
               <h2>How it Works</h2>
-              <p>There are two primary methods of ablation used:</p>
+              <p>Dr. Patel utilizes the latest, most advanced technologies including:</p>
               <ul className={styles.list}>
                 <li><strong>Radiofrequency Ablation:</strong> Uses heat energy to eliminate the problem area.</li>
+                <li><strong>Pulsed Field Ablation (PFA):</strong> A revolutionary technology that uses short-duration electrical pulses to selectively target heart tissue without excess heat or cold, maximizing safety.</li>
                 <li><strong>Cryoablation:</strong> Uses extremely cold temperatures to freeze the tissue.</li>
               </ul>
               <p>Dr. Patel will recommend the best approach based on your specific condition and anatomy.</p>
             </section>
 
             <section className={styles.section}>
-              <h2>What to Expect</h2>
-              <p><strong>Before:</strong> You will receive specific instructions about fasting and medications.</p>
-              <p><strong>During:</strong> The procedure is performed in a specialized electrophysiology lab. You will be sedated to ensure comfort.</p>
-              <p><strong>After:</strong> Most patients go home the same day or the next morning. Recovery is generally quick, with most people returning to normal activities within a few days.</p>
+              <h2>See It In Action</h2>
+              <div className={styles.videoGridLarge}> {/* Changed class for larger layout */}
+                <div className={styles.videoCardLarge}>
+                  <h3>AFib Ablation Mapping</h3>
+                  <video controls muted className={styles.videoLarge} poster="/images/simple icon logo.jpeg">
+                    <source src="/videos/af_ablation_1.mov" type="video/mp4" />
+                    <source src="/videos/af_ablation_1.mov" type="video/quicktime" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className={styles.videoCardLarge}>
+                   <h3>Precision Targeting</h3>
+                   <video controls muted className={styles.videoLarge} poster="/images/simple icon logo.jpeg">
+                    <source src="/videos/af_ablation_2.mov" type="video/mp4" />
+                    <source src="/videos/af_ablation_2.mov" type="video/quicktime" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
             </section>
 
             <div className={styles.ctaBox}>
@@ -58,9 +74,20 @@ export default function AblationPage() {
               <ul>
                 <li>Atrial Fibrillation (AFib)</li>
                 <li>Atrial Flutter</li>
-                <li>Supraventricular Tachycardia (SVT)</li>
+                <li style={{ whiteSpace: "nowrap" }}>Supraventricular Tachycardia (SVT)</li>
+                <li>Premature Ventricular Beat (PVC)</li>
                 <li>Ventricular Tachycardia</li>
               </ul>
+            </div>
+            
+            <div className={styles.sidebarCard}>
+               <h3>SVT Visualization</h3>
+               <video controls className={styles.sidebarVideo} poster="/images/simple icon logo.jpeg">
+                   <source src="/videos/svt_ablation.mov" type="video/mp4" />
+                   <source src="/videos/svt_ablation.mov" type="video/quicktime" />
+                   Your browser does not support the video tag.
+               </video>
+               <p className={styles.captionSmall}>Understanding electrical pathways in SVT.</p>
             </div>
           </aside>
         </div>

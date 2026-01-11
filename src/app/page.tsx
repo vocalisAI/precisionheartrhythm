@@ -42,7 +42,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className={styles.trustTitle}>10+ Years</h3>
-              <p className={styles.trustText}>Clinical Experience</p>
+              <p className={styles.trustText} style={{ whiteSpace: 'nowrap' }}>Electrophysiology Exp.</p>
             </div>
             <div className={styles.trustItem}>
               <div className={styles.trustIcon}>
@@ -82,7 +82,7 @@ export default function Home() {
             <div className={styles.doctorContent}>
               <h2 className={styles.doctorHeading}>Meet Dr. Jaydutt Patel</h2>
               <p className={styles.doctorCredentials}>
-                MD, FACC, FHRS<br />
+                MD<br />
                 Cardiac Electrophysiologist
               </p>
               <p className={styles.doctorBio}>
@@ -130,18 +130,17 @@ export default function Home() {
               <div className={styles.cardLink}>Learn more &rarr;</div>
             </Link>
 
-            <Link href="/device-clinic" className={styles.card}>
+            <Link href="/procedures/leadless-pacemaker" className={styles.card}>
               <div className={styles.cardIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
-                  <path d="M12 18h.01"/>
-                  <path d="M9 6h6"/>
-                  <path d="M9 10h6"/>
+                  <rect x="6" y="4" width="12" height="16" rx="6" ry="6" />
+                  <line x1="12" y1="8" x2="12" y2="10" />
+                  <line x1="12" y1="16" x2="12" y2="16.01" />
                 </svg>
               </div>
-              <h3 className={styles.cardTitle}>Device Clinic</h3>
+              <h3 className={styles.cardTitle}>Leadless Pacemaker</h3>
               <p className={styles.cardText}>
-                Monitoring and care for pacemakers, defibrillators, and loop recorders.
+                State-of-the-art pacing without wires or visible scars.
               </p>
               <div className={styles.cardLink}>Learn more &rarr;</div>
             </Link>

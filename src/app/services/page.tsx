@@ -10,14 +10,24 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: "Atrial Fibrillation Management",
+    title: "Atrial Fibrillation",
     description: "Comprehensive care for AFib including medication management, lifestyle counseling, and advanced catheter ablation.",
     link: "/conditions/atrial-fibrillation"
   },
   {
     title: "Cardiac Ablation",
-    description: "Radiofrequency and cryoablation procedures for SVT, AFib, Atrial Flutter, and Ventricular Tachycardia.",
+    description: "Advanced PFA (Pulsed Field Ablation), Radiofrequency, and Cryoablation for AFib, SVT, and PVCs.",
     link: "/procedures/cardiac-ablation"
+  },
+  {
+    title: "Leadless Pacemaker",
+    description: "State-of-the-art pacing with Micra™ and Aveir™ systems. No visible scar, no wires, and MRI compatible.",
+    link: "/procedures/leadless-pacemaker"
+  },
+  {
+    title: "Implantable Loop Recorder",
+    description: "Long-term monitoring for unexplained fainting or palpitations using a tiny, insertable device.",
+    link: "/procedures/loop-recorder"
   },
   {
     title: "Pacemakers & ICDs",
@@ -28,16 +38,6 @@ const services = [
     title: "Left Atrial Appendage Closure",
     description: "WATCHMAN™ procedure to reduce stroke risk in patients with non-valvular AFib who need an alternative to blood thinners.",
     link: "#" // Placeholder or specific page if needed
-  },
-  {
-    title: "Remote Monitoring",
-    description: "Continuous monitoring of cardiac devices from the comfort of your home to ensure optimal performance and early detection of issues.",
-    link: "/device-clinic"
-  },
-  {
-    title: "Syncope Evaluation",
-    description: "Diagnostic testing and management for patients experiencing fainting spells or unexplained loss of consciousness.",
-    link: "#"
   }
 ];
 

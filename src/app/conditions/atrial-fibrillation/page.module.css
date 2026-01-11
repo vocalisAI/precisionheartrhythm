@@ -60,7 +60,7 @@
 }
 
 .ctaBox {
-  background-color: var(--color-primary-blue);
+  background-color: var(--color-india-saffron);
   color: white;
   padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
@@ -74,8 +74,9 @@
 }
 
 .ctaBox p {
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   margin-bottom: var(--spacing-md);
+  font-weight: 500;
 }
 
 .sidebar {
@@ -89,14 +90,16 @@
   padding: var(--spacing-lg);
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-india-saffron); /* Brand color pop */
 }
 
 .sidebarCard h3 {
   font-size: 1.25rem;
   margin-bottom: var(--spacing-sm);
-  border-bottom: 2px solid var(--color-accent-green);
+  border-bottom: 2px solid var(--color-india-navy);
   display: inline-block;
   padding-bottom: 0.25rem;
+  color: var(--color-india-navy);
 }
 
 .sidebarCard ul {
@@ -117,4 +120,136 @@
 
 .linkList li a:hover {
   color: var(--color-accent-orange);
+}
+
+/* Video Grid Styles */
+.videoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.videoCard {
+  background: var(--color-background-off);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.videoCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-heading);
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.sidebarVideo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-xs);
+  line-height: 1.4;
+}
+
+.captionSmall {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.imageWrapper {
+  margin: var(--spacing-md) 0;
+  text-align: center;
+}
+
+.contentImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Large Video Layout */
+.videoGridLarge {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.videoCardLarge {
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-india-green);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.videoCardLarge h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-india-navy);
+  border-left: 6px solid var(--color-india-saffron);
+  padding-left: var(--spacing-sm);
+}
+
+.videoLarge {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-sm);
+  background: black;
+}
+
+/* Comparison Block Styles */
+.comparisonBlock {
+  margin-bottom: var(--spacing-sm);
+}
+
+.comparisonBlock h4 {
+  font-size: 1.05rem;
+  color: var(--color-india-navy);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.compactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.compactList li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: var(--color-text-main);
+  padding-left: 0;
+}
+
+.separator {
+  height: 1px;
+  background-color: var(--color-border);
+  margin: var(--spacing-md) 0;
 }

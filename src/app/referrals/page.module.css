@@ -39,12 +39,23 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  border-top: 4px solid var(--color-india-saffron);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.infoCard:nth-child(2) {
+  border-top-color: var(--color-india-green);
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .infoCard h2 {
   font-size: 1.5rem;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-primary-dark);
+  color: var(--color-india-navy);
 }
 
 .contactBlock {
@@ -64,7 +75,7 @@
 .phoneLink {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-primary-blue);
+  color: var(--color-india-saffron);
 }
 
 .processSection {
@@ -73,23 +84,31 @@
 
 .processSection h2 {
   margin-bottom: var(--spacing-md);
+  color: var(--color-india-navy);
+  border-bottom: 2px solid var(--color-india-green);
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 .benefitsList {
   list-style: none; /* Custom bullets */
+  margin-top: var(--spacing-md);
 }
 
 .benefitsList li {
-  margin-bottom: var(--spacing-sm);
-  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  padding-left: 2rem;
   position: relative;
+  font-size: 1.1rem;
 }
 
 .benefitsList li::before {
-  content: "★";
-  color: var(--color-accent-orange);
+  content: "✔"; /* Changed to checkmark */
+  color: var(--color-india-green);
   position: absolute;
   left: 0;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .resourcesSection {
@@ -97,6 +116,12 @@
   padding: var(--spacing-xl);
   border-radius: var(--radius-lg);
   text-align: center;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-india-navy);
+}
+
+.resourcesSection h2 {
+  color: var(--color-india-navy);
 }
 
 .buttonGroup {

@@ -8,7 +8,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* Slightly wider cards */
   gap: var(--spacing-lg);
 }
 
@@ -17,36 +17,73 @@
   padding: var(--spacing-lg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Softer base shadow */
+}
+
+/* Color accents for cards */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-india-saffron), var(--color-india-green));
+  opacity: 0.8;
 }
 
 .card:hover {
-  border-color: var(--color-primary-blue);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
-  transform: translateY(-5px);
+  border-color: var(--color-india-navy);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
 }
 
 .cardTitle {
   font-size: 1.5rem;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   color: var(--color-primary-blue);
+  text-align: center; /* Centered as requested */
+  font-weight: 700;
+  position: relative;
+  padding-bottom: var(--spacing-sm);
+}
+
+.cardTitle::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--color-accent-orange);
+  margin: var(--spacing-sm) auto 0; /* Center the underline */
+  border-radius: 2px;
 }
 
 .cardDesc {
   color: var(--color-text-light);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
   flex-grow: 1;
+  text-align: center; /* Optional: Center text too for a cleaner look? Let's try it */
+  font-size: 1.05rem;
 }
 
 .cardLink {
-  color: var(--color-accent-green);
+  color: white;
+  background-color: var(--color-primary-blue);
   font-weight: 600;
   margin-top: auto;
-  align-self: flex-start;
+  align-self: center; /* Center the button */
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  transition: background-color 0.2s;
+  font-size: 0.95rem;
 }
 
 .cardLink:hover {
-  text-decoration: underline;
+  background-color: var(--color-accent-orange);
+  text-decoration: none;
 }

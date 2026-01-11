@@ -38,12 +38,17 @@
 
     --radius: 0.5rem;
 
+    /* Theme Colors (Indian Flag Inspiration) */
+    --color-india-saffron: #FF9933;
+    --color-india-white: #FFFFFF;
+    --color-india-green: #138808;
+    --color-india-navy: #000080;
+
     /* Existing Design Tokens - Refined Palette */
-    --color-primary-blue: #073c69;
-    --color-primary-dark: #052b4d;
-    --color-accent-teal: #0891b2;
-    --color-accent-teal-light: #06b6d4;
-    --color-accent-orange: #f06033;
+    --color-primary-blue: var(--color-india-navy); /* Updated to Navy */
+    --color-primary-dark: #000060;
+    --color-accent-teal: var(--color-india-green); /* Converted Teal to Green for theme consistency */
+    --color-accent-orange: var(--color-india-saffron);
 
     --color-text-main: #1e293b;
     --color-text-light: #64748b;
@@ -66,7 +71,7 @@
     /* Layout */
     --container-width: 1100px;
     --prose-width: 65ch;
-    --header-height: 80px;
+    --header-height: 120px; /* Increased height for larger logo */
     --radius-sm: 4px;
     --radius-md: 0.5rem;
     --radius-lg: 0.75rem;
@@ -295,5 +300,30 @@ img {
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Global Selection Color */
+  ::selection {
+    background-color: var(--color-india-saffron);
+    color: white;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-background-off);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-india-navy);
+    border-radius: 6px;
+    border: 3px solid var(--color-background-off);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-india-saffron);
   }
 }

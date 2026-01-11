@@ -32,7 +32,7 @@
   height: 100%;
   z-index: 1; /* Above overlay */
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.5; /* Slightly higher than 0.2 for orange visibility */
 }
 
 .ecgSvg {
@@ -46,15 +46,15 @@
 
 .ecgPath {
   fill: none;
-  stroke: var(--color-accent-teal);
-  stroke-width: 1.5;
-  filter: drop-shadow(0 0 2px rgba(45, 212, 191, 0.4));
+  stroke: #FF9933; /* Hardcoded Orange for safety */
+  stroke-width: 2;
+  filter: drop-shadow(0 0 3px rgba(255, 153, 51, 0.5));
   stroke-linejoin: round;
   stroke-linecap: round;
 }
 
 .ecgPathSecondary {
-  stroke: rgba(45, 212, 191, 0.5);
+  stroke: rgba(255, 153, 51, 0.4);
   stroke-width: 1;
 }
 

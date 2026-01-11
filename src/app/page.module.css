@@ -273,7 +273,11 @@
 
 /* CTA Band */
 .ctaBand {
-  background-color: var(--color-primary-blue);
+  background: linear-gradient(
+    160deg,
+    rgba(7, 60, 105, 0.95) 0%,
+    rgba(5, 43, 77, 0.9) 100%
+  );
   color: white;
   padding: var(--spacing-2xl) 0;
   text-align: center;

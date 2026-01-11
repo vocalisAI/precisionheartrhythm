@@ -59,10 +59,33 @@ export default function ContactPage() {
             <div className={styles.cardDivider} />
 
             <h3 className={styles.subHeading}>Office Hours</h3>
-            <ul className={styles.hoursList}>
-              <li><span>Monday - Friday:</span> 8:00 AM - 5:00 PM</li>
+             <ul className={styles.hoursList}>
+              <li><span>Monday - Friday:</span> 8:00 AM - 4:00 PM</li>
               <li><span>Saturday - Sunday:</span> Closed</li>
             </ul>
+
+            <div className={styles.cardDivider} />
+
+            <div className={styles.reviewSection}>
+              <h3 className={styles.subHeading}>Enjoyed Your Visit?</h3>
+              <p className={styles.reviewText}>Leave us a review if you have had a positive experience.</p>
+              <a 
+                href="https://qrco.de/bgY6rJ" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.qrLink}
+                title="Click to leave a review"
+              >
+                <div className={styles.qrWrapper}>
+                  <img 
+                    src="/images/google_review_qr.png" 
+                    alt="Scan or Click to leave a Google Review" 
+                    className={styles.qrCode}
+                  />
+                </div>
+                <span className={styles.clickHint}>(Click or Scan)</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

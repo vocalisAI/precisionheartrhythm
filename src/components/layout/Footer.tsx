@@ -12,7 +12,7 @@ export default function Footer() {
           <div className={styles.column}>
             <h3>Precision Heart Rhythm</h3>
             <p>7640 W Sylvania Ave - Suite G<br />Sylvania, OH 43560</p>
-            <p>Phone: <a href="tel:4197543278">(419) 754-3278</a></p>
+            <p>Phone: <span style={{ whiteSpace: "nowrap" }}>(419) 754-3278</span></p>
             <p>Fax: (844) 812-0035</p>
             <p><a href="mailto:info@precisionheartrhythm.com">info@precisionheartrhythm.com</a></p>
           </div>
@@ -34,6 +34,8 @@ export default function Footer() {
             <Link href="/procedures/cardiac-ablation">Cardiac Ablation</Link>
             <Link href="/device-clinic">Pacemaker & ICDs</Link>
             <Link href="/services/watchman">Watchman Procedure</Link>
+            <Link href="/procedures/leadless-pacemaker">Leadless Pacemaker</Link>
+            <Link href="/procedures/loop-recorder">Loop Recorder</Link>
           </div>
         </div>
 

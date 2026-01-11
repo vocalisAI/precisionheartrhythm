@@ -6,11 +6,22 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border-light);
-  height: 80px;
+  height: var(--header-height);
   display: flex;
   align-items: center;
   width: 100%;
   transition: box-shadow var(--transition-base);
+}
+
+/* Brand Stripe */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-india-saffron), var(--color-india-white), var(--color-india-green));
 }
 
 .container {

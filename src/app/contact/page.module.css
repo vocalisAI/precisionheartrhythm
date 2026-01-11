@@ -39,6 +39,11 @@
   border-radius: var(--radius-lg);
   padding: var(--spacing-xl);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-top: 4px solid var(--color-india-navy);
+}
+
+.card:nth-child(2) {
+  border-top-color: var(--color-india-green);
 }
 
 .cardHeading {
@@ -148,7 +153,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  max-width: 300px;
+  width: 100%; /* Use full width to separate items */
 }
 
 .hoursList li:not(:last-child) {
@@ -157,4 +162,57 @@
 
 .hoursList span {
   font-weight: 600;
+}
+
+.reviewSection {
+  margin-top: var(--spacing-md); /* Reduced from lg to move up */
+  text-align: center;
+}
+
+.reviewText {
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  white-space: nowrap; /* Force one line */
+}
+
+.qrLink {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.qrLink:hover {
+  transform: scale(1.05);
+}
+
+.qrWrapper {
+  display: inline-block;
+  padding: var(--spacing-sm);
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-xs);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.qrLink:hover .qrWrapper {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-accent-orange);
+}
+
+.qrCode {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.clickHint {
+  font-size: 0.85rem;
+  color: var(--color-primary-blue);
+  font-weight: 500;
+  opacity: 0.8;
 }

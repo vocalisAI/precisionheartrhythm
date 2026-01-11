@@ -16,8 +16,8 @@ export default function Navbar() {
              <Image 
               src="/images/simple icon logo.jpeg" 
               alt="Precision Heart Rhythm Logo" 
-              width={36} 
-              height={36} 
+              width={100} 
+              height={100} 
               className={styles.logoImage}
             />
             <span className={styles.logoText}>
@@ -33,7 +33,7 @@ export default function Navbar() {
             <Link href="/contact" className={styles.ctaButton}>
               Contact Us
             </Link>
-            <a href="https://mychart.com" target="_blank" rel="noopener noreferrer" className={styles.portalButton}>
+            <a href="#" className={styles.portalButton}>
               Patient Portal
             </a>
           </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
            <Link href="/device-clinic" onClick={() => setIsMobileMenuOpen(false)}>Device Clinic</Link>
            <Link href="/referrals" onClick={() => setIsMobileMenuOpen(false)}>Referring Physicians</Link>
            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
-           <a href="https://mychart.com" target="_blank" rel="noopener noreferrer" className={styles.mobilePortalLink} onClick={() => setIsMobileMenuOpen(false)}>
+           <a href="#" className={styles.mobilePortalLink} onClick={() => setIsMobileMenuOpen(false)}>
              Patient Portal
            </a>
         </div>

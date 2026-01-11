@@ -173,3 +173,118 @@
   text-align: center;
   margin-bottom: var(--spacing-lg);
 }
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .philosophyGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.philosophyItem {
+  background: var(--color-background-off);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-top: 4px solid var(--color-india-saffron);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.philosophyItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.philosophyItem:nth-child(2) {
+  border-top-color: var(--color-india-navy);
+}
+
+.philosophyItem:nth-child(3) {
+  border-top-color: var(--color-india-green);
+}
+
+.philosophyItem h4 {
+  font-size: 1.1rem;
+  color: var(--color-primary-blue);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 700;
+  text-align: center;
+}
+
+.philosophyItem p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--color-text-main);
+  line-height: 1.5;
+}
+.affiliationsBlock {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.affiliationsImage {
+  max-width: 100%;
+  height: auto;
+  opacity: 1; /* Fully visible */
+  /* mix-blend-mode removed to restore original color */
+}
+
+.philosophySection {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.philosophyTitle {
+  font-size: 2rem;
+  color: var(--color-primary-blue);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.philosophyIntro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+  color: var(--color-text-main);
+  font-size: 1.1rem;
+}
+.affiliationsWrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 80px; 
+  margin-top: -16px;
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  /* border: 1px solid var(--color-border); Optional: if you want the border back */
+}
+
+.logoContainer {
+  position: relative;
+  height: 45px;
+  width: 100%; 
+  max-width: 120px; /* Prevent logos from getting too huge */
+  flex: 1;
+}
+
+.logoImage {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Hide the old block if still referenced or needed clean up */
+.affiliationsBlock {
+  display: none;
+}
