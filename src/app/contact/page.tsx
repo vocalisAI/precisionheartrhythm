@@ -56,6 +56,15 @@ export default function ContactPage() {
               <strong>Email:</strong> <a href="mailto:info@precisionheartrhythm.com">info@precisionheartrhythm.com</a>
             </div>
 
+            <a 
+              href="https://phr1.pehrportal.com/scheduling.html" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.scheduleBtn}
+            >
+              Schedule Online
+            </a>
+
             <div className={styles.cardDivider} />
 
             <h3 className={styles.subHeading}>Office Hours</h3>

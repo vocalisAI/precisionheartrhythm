@@ -60,12 +60,14 @@
 }
 
 .ctaBox {
-  background-color: var(--color-india-saffron);
+  background: linear-gradient(135deg, var(--color-india-navy) 0%, #000060 100%);
   color: white;
   padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
   text-align: center;
   margin-top: var(--spacing-xl);
+  border-left: 4px solid var(--color-india-green);
+  box-shadow: 0 4px 20px rgba(0, 0, 128, 0.2);
 }
 
 .ctaBox h3 {
@@ -77,6 +79,24 @@
   color: white;
   margin-bottom: var(--spacing-md);
   font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* Override button colors inside CTA box for better contrast */
+.ctaBox a,
+.ctaBox button {
+  background-color: white !important;
+  color: var(--color-india-navy) !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ctaBox a:hover,
+.ctaBox button:hover {
+  background-color: var(--color-india-saffron) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 153, 51, 0.4);
 }
 
 .sidebar {

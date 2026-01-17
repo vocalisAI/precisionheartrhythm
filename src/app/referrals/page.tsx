@@ -53,10 +53,35 @@ export default function ReferralsPage() {
 
         <section className={styles.resourcesSection}>
           <h2>Referral Resources</h2>
-          <p>Download our referral form or patient education materials.</p>
+          <p>Download our referral form (available in printable or fillable format).</p>
           <div className={styles.buttonGroup}>
-            <Button variant="secondary" className={styles.resourceBtn}>Download Referral Form (PDF)</Button>
-            <Button variant="outline" className={styles.resourceBtn}>Patient Brochure (PDF)</Button>
+            <a href="/documents/Referral_Form_Printable.pdf" download className={styles.resourceBtn}>
+              <Button variant="secondary">Referral Form (Printable PDF)</Button>
+            </a>
+            <a href="/documents/Referral_Form_Fillable.pdf" download className={styles.resourceBtn}>
+              <Button variant="secondary">Referral Form (Fillable PDF)</Button>
+            </a>
+          </div>
+        </section>
+
+        <section className={styles.patientSection}>
+          <h2>For Patients</h2>
+          <p>New patient forms and resources to prepare for your appointment.</p>
+          <div className={styles.buttonGroup}>
+            <a href="/documents/New_Patient_Intake_Forms.pdf" download className={styles.resourceBtn}>
+              <Button variant="secondary">New Patient Intake Forms (PDF)</Button>
+            </a>
+            <a href="/documents/New_Patient_Review_of_Systems.docx" download className={styles.resourceBtn}>
+              <Button variant="secondary">Cardiac Review of Systems (Word)</Button>
+            </a>
+            <a 
+              href="https://phr1.pehrportal.com/scheduling.html" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.resourceBtn}
+            >
+              <Button variant="primary">Schedule Appointment Online</Button>
+            </a>
           </div>
         </section>
       </div>

@@ -41,10 +41,12 @@
 
 .outline {
   background-color: transparent;
-  border-color: white;
-  color: white;
+  border-color: var(--color-india-navy);
+  color: var(--color-india-navy);
 }
 
 .outline:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--color-india-navy);
+  color: white;
+  transform: translateY(-2px);
 }

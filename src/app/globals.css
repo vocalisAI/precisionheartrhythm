@@ -49,6 +49,7 @@
     --color-primary-dark: #000060;
     --color-accent-teal: var(--color-india-green); /* Converted Teal to Green for theme consistency */
     --color-accent-orange: var(--color-india-saffron);
+    --color-accent-green: var(--color-india-green);
 
     --color-text-main: #1e293b;
     --color-text-light: #64748b;

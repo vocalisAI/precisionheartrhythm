@@ -82,7 +82,7 @@ export default function AblationPage() {
             
             <div className={styles.sidebarCard}>
                <h3>SVT Visualization</h3>
-               <video controls className={styles.sidebarVideo} poster="/images/simple icon logo.jpeg">
+               <video controls muted className={styles.sidebarVideo} poster="/images/simple icon logo.jpeg">
                    <source src="/videos/svt_ablation.mov" type="video/mp4" />
                    <source src="/videos/svt_ablation.mov" type="video/quicktime" />
                    Your browser does not support the video tag.

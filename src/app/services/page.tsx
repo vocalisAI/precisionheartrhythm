@@ -37,7 +37,7 @@ const services = [
   {
     title: "Left Atrial Appendage Closure",
     description: "WATCHMAN™ procedure to reduce stroke risk in patients with non-valvular AFib who need an alternative to blood thinners.",
-    link: "#" // Placeholder or specific page if needed
+    link: "/procedures/watchman"
   }
 ];
 

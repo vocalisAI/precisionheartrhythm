@@ -131,3 +131,22 @@
   margin-top: var(--spacing-md);
   flex-wrap: wrap;
 }
+
+.patientSection {
+  background-color: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-india-green);
+  margin-top: var(--spacing-xl);
+}
+
+.patientSection h2 {
+  color: var(--color-india-navy);
+}
+
+.patientSection p {
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-sm);
+}

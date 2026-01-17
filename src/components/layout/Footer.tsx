@@ -33,7 +33,7 @@ export default function Footer() {
             <Link href="/conditions/atrial-fibrillation">Atrial Fibrillation</Link>
             <Link href="/procedures/cardiac-ablation">Cardiac Ablation</Link>
             <Link href="/device-clinic">Pacemaker & ICDs</Link>
-            <Link href="/services/watchman">Watchman Procedure</Link>
+            <Link href="/procedures/watchman">Watchman Procedure</Link>
             <Link href="/procedures/leadless-pacemaker">Leadless Pacemaker</Link>
             <Link href="/procedures/loop-recorder">Loop Recorder</Link>
           </div>

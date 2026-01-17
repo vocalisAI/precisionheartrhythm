@@ -29,7 +29,7 @@ export default function ReviewsCarousel() {
         const cardWidth = 320;
         const gap = 24;
         const totalWidth = reviews.length * (cardWidth + gap);
-        const next = prev + 1;
+        const next = prev + 2; // Faster scroll: 2px per interval instead of 1
         // Reset when we've scrolled through all cards
         if (next >= totalWidth) {
           return 0;

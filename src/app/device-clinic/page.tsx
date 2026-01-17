@@ -22,7 +22,7 @@ export default function DeviceClinicPage() {
           <div className={styles.deviceContent}>
             <h2>Pacemakers & ICDs</h2>
             <p>
-              We provide full-spectrum care for patients with implanted cardiac devices. 
+              We provide full-spectrum care for patients with implanted cardiac devices including remote monitoring services. 
               From initial implantation to routine follow-up and battery management, our clinic ensures your device is functioning optimally to protect your heart.
             </p>
             <ul>
@@ -31,10 +31,14 @@ export default function DeviceClinicPage() {
               <li><strong>Loop Recorders:</strong> For long-term rhythm monitoring.</li>
             </ul>
           </div>
-          <div className={styles.deviceImage}>
-             {/* Placeholder for device image */}
-             <div className={styles.placeholderBg}>
-               <span>Device Technology</span>
+          <div className={styles.deviceImages}>
+             <div className={styles.evolutionImage}>
+               <img src="/images/pacemaker_evolution.jpg" alt="Pacemaker technology evolution showing size reduction over decades" />
+               <p className={styles.imageCaption}>Pacemaker Evolution</p>
+             </div>
+             <div className={styles.evolutionImage}>
+               <img src="/images/icd_evolution.jpg" alt="ICD (Implantable Cardioverter Defibrillator) technology evolution" />
+               <p className={styles.imageCaption}>ICD Evolution</p>
              </div>
           </div>
         </section>

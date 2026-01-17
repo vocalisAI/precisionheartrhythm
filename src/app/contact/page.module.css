@@ -216,3 +216,27 @@
   font-weight: 500;
   opacity: 0.8;
 }
+
+/* Schedule Button */
+.scheduleBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--spacing-md);
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #138808;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(19, 136, 8, 0.35);
+}
+
+.scheduleBtn:hover {
+  background-color: #0d6b06;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(19, 136, 8, 0.45);
+}
+
