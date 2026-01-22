@@ -45,10 +45,10 @@ export default function ReferralsPage() {
         <section className={styles.processSection}>
           <h2>Why Refer to Precision Heart Rhythm?</h2>
           <ul className={styles.benefitsList}>
+            <li><strong>Individualized Care:</strong> Your patients will receive a custom treatment plan to fit their individualized needs.</li>
             <li><strong>Timely Access:</strong> We prioritize quick scheduling for new patients.</li>
             <li><strong>Comprehensive Communication:</strong> You will receive prompt updates and reports after every visit and procedure.</li>
             <li><strong>Collaborative Care:</strong> We work as an extension of your practice, ensuring seamless continuity of care.</li>
-            <li><strong>Individualized Care:</strong> Your patients will receive a custom treatment plan to fit their individualized needs.</li>
           </ul>
         </section>
 
