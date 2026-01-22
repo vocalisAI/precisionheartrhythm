@@ -60,12 +60,6 @@ export default function AblationPage() {
                 </div>
               </div>
             </section>
-
-            <div className={styles.ctaBox}>
-              <h3>Discuss Your Options</h3>
-              <p>Find out if cardiac ablation is the right treatment for you.</p>
-              <Button href="/contact" variant="primary">Request Consultation</Button>
-            </div>
           </div>
 
           <aside className={styles.sidebar}>
@@ -90,6 +84,12 @@ export default function AblationPage() {
                <p className={styles.captionSmall}>Understanding electrical pathways in SVT.</p>
             </div>
           </aside>
+
+          <div className={styles.ctaBox}>
+            <h3>Discuss Your Options</h3>
+            <p>Find out if cardiac ablation is the right treatment for you.</p>
+            <Button href="/contact" variant="primary">Request Consultation</Button>
+          </div>
         </div>
       </div>
     </div>

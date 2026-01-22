@@ -55,8 +55,6 @@ export default function Navbar() {
         <div className={styles.mobileMenu}>
            <Link href="/about" onClick={() => setIsMobileMenuOpen(false)}>Meet Dr. Patel</Link>
            <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-           <Link href="/conditions/atrial-fibrillation" onClick={() => setIsMobileMenuOpen(false)}>AFib Center</Link>
-           <Link href="/device-clinic" onClick={() => setIsMobileMenuOpen(false)}>Device Clinic</Link>
            <Link href="/referrals" onClick={() => setIsMobileMenuOpen(false)}>Referring Physicians</Link>
            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
            <a href="#" className={styles.mobilePortalLink} onClick={() => setIsMobileMenuOpen(false)}>

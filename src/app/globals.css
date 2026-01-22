@@ -96,6 +96,47 @@
 }
 
 @layer base {
+  @media (max-width: 768px) {
+    :root {
+      /* Mobile Spacing */
+      --spacing-lg: 1.5rem;
+      --spacing-xl: 2rem;
+      --spacing-2xl: 3rem;
+      --spacing-3xl: 4rem;
+      
+      /* Mobile Header Height */
+      --header-height: 80px;
+
+      /* Mobile Font Sizes */
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 2rem; /* Was 2.75rem */
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 1.75rem; /* Was 2rem */
+    }
+    h3 {
+      font-size: 1.375rem; /* Was 1.5rem */
+    }
+    h4 {
+      font-size: 1.125rem; /* Was 1.25rem */
+    }
+
+    /* Full Width Buttons on Mobile */
+    button, .button, a[class*="btn"], a[class*="button"] {
+      min-height: 44px; /* Touch target size */
+    }
+    
+    .container {
+      padding: 0 var(--spacing-sm);
+    }
+  }
+}
+
+@layer base {
   * {
     @apply border-border;
   }

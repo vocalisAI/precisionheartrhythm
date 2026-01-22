@@ -208,6 +208,14 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  .contentImage {
+    max-height: 250px; /* Prevent images from dominating height */
+    object-fit: contain; /* Ensure full image is visible */
+    background: var(--color-background-off);
+  }
+}
+
 /* Large Video Layout */
 .videoGridLarge {
   display: flex;
@@ -240,6 +248,12 @@
   border-radius: var(--radius-sm);
   margin-bottom: var(--spacing-sm);
   background: black;
+}
+
+@media (max-width: 768px) {
+  .videoLarge {
+    max-height: 220px; /* Constrain video height on mobile */
+  }
 }
 
 /* Comparison Block Styles */

@@ -26,7 +26,7 @@ export default function ReferralsPage() {
             </p>
             <div className={styles.contactBlock}>
               <p className={styles.label}>Physician Line:</p>
-              <a href="tel:4197543278" className={styles.phoneLink}>(419) 754-3278</a>
+              <a href="tel:4197543278" className={styles.phoneLink}>419-75-HEART</a>
             </div>
           </div>
 
@@ -48,6 +48,7 @@ export default function ReferralsPage() {
             <li><strong>Timely Access:</strong> We prioritize quick scheduling for new patients.</li>
             <li><strong>Comprehensive Communication:</strong> You will receive prompt updates and reports after every visit and procedure.</li>
             <li><strong>Collaborative Care:</strong> We work as an extension of your practice, ensuring seamless continuity of care.</li>
+            <li><strong>Individualized Care:</strong> Your patients will receive a custom treatment plan to fit their individualized needs.</li>
           </ul>
         </section>
 

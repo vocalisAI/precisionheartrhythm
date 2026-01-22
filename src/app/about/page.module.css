@@ -13,12 +13,24 @@
   letter-spacing: -0.03em;
 }
 
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.5rem;
+  }
+}
+
 .pageTitleUnderline {
   width: 80px;
   height: 4px;
   background: var(--color-accent-teal);
   margin: 0 auto var(--spacing-xl);
   border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .pageTitleUnderline {
+    margin-bottom: var(--spacing-lg);
+  }
 }
 
 .profileSection {
@@ -66,6 +78,14 @@
   border-radius: var(--radius-lg);
   object-fit: cover;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .profileImage {
+    max-width: 280px; /* Constrain width on mobile */
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .statsCard {
@@ -265,10 +285,18 @@
   border-radius: var(--radius-md);
   padding: 12px 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center on mobile */
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap; /* Allow wrapping on mobile */
   /* border: 1px solid var(--color-border); Optional: if you want the border back */
+}
+
+@media (min-width: 768px) {
+  .affiliationsWrapper {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .logoContainer {

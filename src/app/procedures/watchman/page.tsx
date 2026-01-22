@@ -149,11 +149,7 @@ export default function WatchmanPage() {
               </div>
             </section>
 
-            <div className={styles.ctaBox}>
-              <h3>Request a Consultation</h3>
-              <p>Find out if WATCHMAN or combined procedures are right for you.</p>
-              <Button href="/contact" variant="primary">Schedule Consultation</Button>
-            </div>
+
           </div>
 
           <aside className={styles.sidebar}>
@@ -175,6 +171,12 @@ export default function WatchmanPage() {
               </ul>
             </div>
           </aside>
+
+          <div className={styles.ctaBox}>
+            <h3>Request a Consultation</h3>
+            <p>Find out if WATCHMAN or combined procedures are right for you.</p>
+            <Button href="/contact" variant="primary">Schedule Consultation</Button>
+          </div>
         </div>
       </div>
     </div>

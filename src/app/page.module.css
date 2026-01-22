@@ -33,9 +33,15 @@
 
 .trustGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--spacing-lg);
   text-align: center;
+}
+
+@media (min-width: 480px) {
+  .trustGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 768px) {

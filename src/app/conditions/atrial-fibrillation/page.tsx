@@ -56,11 +56,6 @@ export default function AFibPage() {
               <p>Options include medication, cardioversion, catheter ablation, or device therapy.</p>
             </section>
 
-            <div className={styles.ctaBox}>
-              <h3>Concerned you might have AFib?</h3>
-              <p>Early diagnosis and treatment can significantly reduce the risk of complications.</p>
-              <Button href="/contact" variant="primary">Schedule an Evaluation</Button>
-            </div>
           </div>
 
           <aside className={styles.sidebar}>
@@ -81,6 +76,12 @@ export default function AFibPage() {
               </ul>
             </div>
           </aside>
+
+          <div className={styles.ctaBox}>
+            <h3>Concerned you might have AFib?</h3>
+            <p>Early diagnosis and treatment can significantly reduce the risk of complications.</p>
+            <Button href="/contact" variant="primary">Schedule an Evaluation</Button>
+          </div>
         </div>
       </div>
     </div>

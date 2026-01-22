@@ -37,6 +37,7 @@
 
 .ecgSvg {
   width: 200%; /* Double width for seamless loop */
+  min-width: 800px; /* Prevent squishing on mobile */
   height: 100%;
   position: absolute;
   left: 0;

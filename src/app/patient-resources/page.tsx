@@ -116,7 +116,7 @@ export default function PatientResourcesPage() {
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <strong>Phone:</strong>
-              <a href="tel:4197543278">(419) 754-3278</a>
+              <a href="tel:4197543278">419-75-HEART</a>
             </div>
             <div className={styles.contactItem}>
               <strong>Email:</strong>

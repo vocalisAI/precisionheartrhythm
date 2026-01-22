@@ -77,7 +77,7 @@ export default function AboutPage() {
                   Beyond his medical career, Dr. Patel has been deeply engaged in civic and community service. He has served as President of the Indian Association of Greater Erie, chaired the American Heart Association Heart Walk, and currently sits on the Board of Trustees for Maumee Valley Country Day School. With a lifelong dedication to education, service, and advancing heart health, Dr. Patel brings both professional expertise and a strong commitment to community leadership, embodying values that bridge healthcare, civic responsibility, and public service.
                 </p>
                 <p className={styles.text}>
-                  Outside of work, he enjoys quality time with his family, reading non-fiction, and staying physically fit.
+                  Outside of work, he enjoys quality time with his family, staying physically fit, and reading non-fiction. Some of his favorite books are The Story of My Experiments with Truth by Mahatma Gandhi, Uncommon by Tony Dungy, and The Lessons of History by Will &amp; Ariel Durant.
                 </p>
               </div>
 

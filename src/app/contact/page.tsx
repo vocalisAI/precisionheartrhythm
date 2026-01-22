@@ -47,7 +47,7 @@ export default function ContactPage() {
 
             <h3 className={styles.subHeading}>Contact Details</h3>
             <div className={styles.detailRow}>
-              <strong>Phone:</strong> <a href="tel:4197543278">(419) 754-3278</a>
+              <strong>Phone:</strong> <a href="tel:4197543278">419-75-HEART</a>
             </div>
             <div className={styles.detailRow}>
               <strong>Fax:</strong> <span>(844) 812-0035</span>

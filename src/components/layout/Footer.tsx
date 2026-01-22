@@ -12,7 +12,7 @@ export default function Footer() {
           <div className={styles.column}>
             <h3>Precision Heart Rhythm</h3>
             <p>7640 W Sylvania Ave - Suite G<br />Sylvania, OH 43560</p>
-            <p>Phone: <span style={{ whiteSpace: "nowrap" }}>(419) 754-3278</span></p>
+            <p>Phone: <a href="tel:4197543278" style={{ color: "inherit", textDecoration: "none" }}>419-75-HEART</a></p>
             <p>Fax: (844) 812-0035</p>
             <p><a href="mailto:info@precisionheartrhythm.com">info@precisionheartrhythm.com</a></p>
           </div>

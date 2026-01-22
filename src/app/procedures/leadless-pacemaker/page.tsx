@@ -58,11 +58,7 @@ export default function LeadlessPacemakerPage() {
               </ul>
             </section>
 
-            <div className={styles.ctaBox}>
-              <h3>Is This Technology Right for You?</h3>
-              <p>Schedule a consultation to determine if you are a candidate for leadless pacing.</p>
-              <Button href="/contact" variant="primary">Make an Appointment</Button>
-            </div>
+
           </div>
 
           <aside className={styles.sidebar}>
@@ -87,6 +83,12 @@ export default function LeadlessPacemakerPage() {
               </div>
             </div>
           </aside>
+
+          <div className={styles.ctaBox}>
+            <h3>Is This Technology Right for You?</h3>
+            <p>Schedule a consultation to determine if you are a candidate for leadless pacing.</p>
+            <Button href="/contact" variant="primary">Make an Appointment</Button>
+          </div>
         </div>
       </div>
     </div>
