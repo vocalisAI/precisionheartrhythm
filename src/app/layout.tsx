@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ScrollToTop from "@/components/layout/ScrollToTop";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,6 +42,7 @@ export default function RootLayout({
         <Navbar />
           <main>{children}</main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
