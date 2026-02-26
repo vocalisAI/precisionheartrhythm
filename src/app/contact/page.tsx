@@ -79,7 +79,7 @@ export default function ContactPage() {
               <h3 className={styles.subHeading}>Enjoyed Your Visit?</h3>
               <p className={styles.reviewText}>Leave us a review if you have had a positive experience.</p>
               <a 
-                href="https://qrco.de/bgY6rJ" 
+                href="https://qrco.de/bgdzjw" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={styles.qrLink}
