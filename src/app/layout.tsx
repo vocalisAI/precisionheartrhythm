@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ScrollToTop from "@/components/layout/ScrollToTop";
+import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -36,6 +37,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* Google Ads Tag (gtag.js) - AW-17941452313 */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17941452313"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17941452313');
+        `}
+      </Script>
       <body className={inter.variable}>
         <ScrollToTop />
         <Navbar />
